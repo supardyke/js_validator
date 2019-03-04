@@ -11,8 +11,8 @@
 			<p id="err" class="alert"></p>
 			<input type="text" name="uName" id="uname" placeholder="Username">
 			<input id="pword" name="password" type="password" placeholder="Password" />
-			<input id="cpword" name="confirmPassword" type="password" placeholder="Repeat Password" />
-			<input id="email" name="email" placeholder="Email Address" />
+			<input id="cpword" name="confirmPassword" type="password" placeholder="Repeat Password" data-validator="[numbers:true,max:10]" />
+			<input id="email" name="email" placeholder="Email Address" data-validator="[valid_email:true,max:20]" />
 			<input type="submit" value="Send" name="">
 		</form>
 	</div>

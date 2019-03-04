@@ -45,3 +45,11 @@ document.getElementById('email').addEventListener('keyup', function() {
 		this.style.borderColor = "red";
 	}
 });
+
+var input = document.querySelectorAll("input[data-validator]");
+input.forEach(function(i){
+	var validateMethods = i.getAttribute("data-validator");
+	console.log(i);
+	console.log(validateMethods);
+	
+});
